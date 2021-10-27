@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <%- include('partials/head') %>
+  <title>miniChallenge - Chapter 5</title>
+</head>
+
+<body>
+  <%- include('partials/navbar') %>
+  <main class="container">
+    <div class="row mt-5">
+      <div class="col mt-5">
+        <div class="headings">
+          <p class="h1 text-black text-center">
+            <span class="text-uppercase">halo, </span>
+            <span style="color: blue;"> <%= name %> </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="col">
+      <form class="row justify-content-center" action="/" method="post">
+        <div class="col-auto">
+          <label class="visually-hidden" for="name">Nama</label>
+          <input type="text" name="name" class="form-control border-1 bg-light" placeholder="Input nama kamu disini"
+            required>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-primary text-uppercase mb-3" type="submit">submit</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <%- include('partials/script.ejs') %>
+</body>
+
+</html>
