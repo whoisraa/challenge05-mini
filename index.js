@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3500;
 const user = {
-    name: ''
+    name: null
 };
 
 app.use(express.urlencoded({
